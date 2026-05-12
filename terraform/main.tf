@@ -19,7 +19,7 @@ provider "azurerm" {
 
 # Resource Group
 resource "azurerm_resource_group" "vault_rg" {
-  name     = "CloudVault-RG"
+  name     = "CloudVault"
   location = "Central India"
 }
 
