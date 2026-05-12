@@ -5,5 +5,5 @@ variable "location" {
 
 variable "resource_group_name" {
   description = "Resource Group name"
-  default     = "CloudVault-RG"
+  default     = "CloudVault"
 }
