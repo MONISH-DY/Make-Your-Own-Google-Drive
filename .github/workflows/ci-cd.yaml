@@ -29,12 +29,12 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         
     - name: CodeQL Analysis
-      uses: github/codeql-action/init@v2
+      uses: github/codeql-action/init@v3
       with:
         languages: python
         
     - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v2
+      uses: github/codeql-action/analyze@v3
 
   deploy-to-aks:
     needs: build-and-test
